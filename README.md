@@ -15,7 +15,7 @@ Control Flow Graph
 Тест случаи според критериумот Every statement
 
 - if(hr<0 || hr>24)
-- 
+
    hr < 0 || x (hr=-5 min=15 sec=15)
    
    hr > 0 && hr>24 (hr=30 min=8 sec=8)
@@ -23,7 +23,7 @@ Control Flow Graph
    hr>0 && hr <24 (hr=11 min=10 sec=10)
    
 - if(min<0 || min>59)
-- 
+ 
    min < 0 || x (hr=12 min =-15 sec=12)
    
    min > 59 (hr=15 min=60 sec=11)
@@ -31,7 +31,7 @@ Control Flow Graph
    min>0 && min<59 (hr=14 min=15 sec=35)
    
 - if(sec>=0 && sec<=59)
-- 
+
    sec>=0 && sec<=59 (hr=10 min=10 sec=30)
    
    sec>=59 (hr=19 min=15 sec=60)
@@ -39,7 +39,7 @@ Control Flow Graph
    sec<=0 || x (hr=19 min=10 sec=-20)
    
 - else if(hr==24 && min==0 && sec==0)
-- 
+ 
    hr==24 && min==0 && sec==0 (hr=24 min=0 sec=0)
    
    hr==24 && min!=0 || x (hr=24 min=37 sec=24)
